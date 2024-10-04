@@ -6,7 +6,7 @@ from langchain.chains.llm import LLMChain
 from langchain.chains.sequential import SimpleSequentialChain
 
 apiKey = os.getenv('GOOGLE_GEMINI_KEY')
-
+print(apiKey)
 st.header('Blog Generator')
 st.write('Enter the topic of your interest to get the desired article')
 
