@@ -10,5 +10,4 @@ This project is built with langchain and streamlit
 
 ##### Environment variables
 
-Create apiKey.py at root level and set the following:
-- apiKey=gemini-api-key-here
+export GOOGLE_GEMINI_KEY="gemini-key-goes-here"

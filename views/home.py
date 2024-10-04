@@ -1,12 +1,12 @@
 import os
-from apiKey import apiKey
 import streamlit as st
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from langchain.chains.llm import LLMChain
 from langchain.chains.sequential import SimpleSequentialChain
 
-os.environ['GOOGLE_GEMINI_KEY'] = apiKey
+apiKey = os.getenv('GOOGLE_GEMINI_KEY')
+
 st.header('Blog Generator')
 st.write('Enter the topic of your interest to get the desired article')
 
