@@ -6,11 +6,10 @@ from langchain.chains.llm import LLMChain
 from langchain.chains.sequential import SimpleSequentialChain
 
 apiKey = os.getenv('GOOGLE_GEMINI_KEY')
-print("apiKey")
-print(apiKey)
+
 st.header('Blog Generator')
 st.write('Enter the topic of your interest to get the desired article')
-
+st.write(apiKey)
 
 topic = st.text_input('Enter your topic')
 title_temp = PromptTemplate(input_variables=['topic'], template='Give me an article title on {topic}')
