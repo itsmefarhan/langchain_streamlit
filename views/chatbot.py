@@ -5,7 +5,7 @@ from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_community.chat_message_histories import StreamlitChatMessageHistory
 from langchain_core.runnables.history import RunnableWithMessageHistory
 
-st.title('Chat with AI')
+st.header('Chat with AI')
 
 apiKey = os.getenv('GOOGLE_GEMINI_KEY')
 

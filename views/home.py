@@ -7,7 +7,7 @@ from langchain_core.output_parsers import StrOutputParser
 apiKey = os.getenv('GOOGLE_GEMINI_KEY')
 
 st.header('Blog Generator')
-st.write('Enter the topic of your interest to get the desired article')
+st.write('Provide the topic of your interest to get the desired article')
 
 topic = st.text_input('Enter your topic')
 
